@@ -13,9 +13,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	template2 "github.com/GoAdminGroup/go-admin/template"
+	"github.com/aluzme/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/language"
+	template2 "github.com/aluzme/go-admin/template"
 	"github.com/mgutz/ansi"
 	"gopkg.in/ini.v1"
 )
@@ -179,7 +179,7 @@ func buildProject(cfgFile string) {
 		checkError(ioutil.WriteFile("./models/base.go", []byte(`package models
 
 import (
-	"github.com/GoAdminGroup/go-admin/modules/db"
+	"github.com/aluzme/go-admin/modules/db"
 	"github.com/jinzhu/gorm"
 )
 
@@ -234,7 +234,7 @@ func Init(c db.Connection) {
 
 	checkError(ioutil.WriteFile("./tables/tables.go", []byte(`package tables
 
-import "github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
+import "github.com/aluzme/go-admin/plugins/admin/modules/table"
 
 // The key of Generators is the prefix of table info url.
 // The corresponding value is the Form and Table data.
@@ -284,7 +284,7 @@ var Generators = map[string]table.Generator{
 		fmt.Println("- postgresql: " + ansi.Color("https://gitee.com/go-admin/go-admin/raw/master/data/admin.pgsql", "blue"))
 		fmt.Println("- mysql: " + ansi.Color("https://gitee.com/go-admin/go-admin/raw/master/data/admin.sql", "blue"))
 	} else {
-		fmt.Println("- sqlite: " + ansi.Color("https://github.com/GoAdminGroup/go-admin/raw/master/data/admin.db", "blue"))
+		fmt.Println("- sqlite: " + ansi.Color("https://github.com/aluzme/go-admin/raw/master/data/admin.db", "blue"))
 		fmt.Println("- mssql: " + ansi.Color("https://raw.githubusercontent.com/GoAdminGroup/go-admin/master/data/admin.mssql", "blue"))
 		fmt.Println("- postgresql: " + ansi.Color("https://raw.githubusercontent.com/GoAdminGroup/go-admin/master/data/admin.pgsql", "blue"))
 		fmt.Println("- mysql: " + ansi.Color("https://raw.githubusercontent.com/GoAdminGroup/go-admin/master/data/admin.sql", "blue"))

@@ -11,23 +11,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoAdminGroup/go-admin/modules/system"
+	"github.com/aluzme/go-admin/modules/system"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/aluzme/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/config"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/modules/remote_server"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard"
-	template2 "github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
-	"github.com/GoAdminGroup/html"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/modules/auth"
+	"github.com/aluzme/go-admin/modules/language"
+	"github.com/aluzme/go-admin/modules/remote_server"
+	"github.com/aluzme/go-admin/modules/utils"
+	"github.com/aluzme/go-admin/plugins"
+	"github.com/aluzme/go-admin/plugins/admin/modules/guard"
+	template2 "github.com/aluzme/go-admin/template"
+	"github.com/aluzme/go-admin/template/types"
+	"github.com/aluzme/go-admin/template/types/form"
+	"github.com/aluzme/html"
 	"github.com/gin-gonic/gin"
 )
 

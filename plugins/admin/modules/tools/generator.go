@@ -9,9 +9,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
+	"github.com/aluzme/go-admin/modules/db"
+	"github.com/aluzme/go-admin/modules/utils"
+	"github.com/aluzme/go-admin/template/types/form"
 )
 
 type Param struct {
@@ -238,7 +238,7 @@ func GenerateTables(outputPath, packageName string, tables []string, new bool) e
 	} else {
 		content = `package ` + packageName + `
 
-import "github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
+import "github.com/aluzme/go-admin/plugins/admin/modules/table"
 
 // The key of Generators is the prefix of table info url.
 // The corresponding value is the Form and Table data.

@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	form2 "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template/icon"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/action"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
-	selection "github.com/GoAdminGroup/go-admin/template/types/form/select"
-	editType "github.com/GoAdminGroup/go-admin/template/types/table"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/db"
+	form2 "github.com/aluzme/go-admin/plugins/admin/modules/form"
+	"github.com/aluzme/go-admin/plugins/admin/modules/table"
+	"github.com/aluzme/go-admin/template/icon"
+	"github.com/aluzme/go-admin/template/types"
+	"github.com/aluzme/go-admin/template/types/action"
+	"github.com/aluzme/go-admin/template/types/form"
+	selection "github.com/aluzme/go-admin/template/types/form/select"
+	editType "github.com/aluzme/go-admin/template/types/table"
 )
 
 // GetUserTable return the model of table user.

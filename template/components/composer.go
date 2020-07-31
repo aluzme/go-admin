@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"strings"
 
-	template2 "github.com/GoAdminGroup/go-admin/template"
+	template2 "github.com/aluzme/go-admin/template"
 )
 
 func ComposeHtml(temList map[string]string, compo interface{}, templateName ...string) template.HTML {

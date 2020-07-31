@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/context"
+	"github.com/aluzme/go-admin/context"
 )
 
 type JumpAction struct {

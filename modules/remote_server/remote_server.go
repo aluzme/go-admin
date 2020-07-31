@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/modules/system"
+	"github.com/aluzme/go-admin/modules/system"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/aluzme/go-admin/modules/logger"
 )
 
 const (

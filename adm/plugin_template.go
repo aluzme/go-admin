@@ -7,15 +7,15 @@ import (
 	"{{.ModulePath}}/controller"
 	"{{.ModulePath}}/guard"
 	language2 "{{.ModulePath}}/modules/language"
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/modules/service"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	form2 "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/language"
+	"github.com/aluzme/go-admin/modules/service"
+	"github.com/aluzme/go-admin/modules/utils"
+	"github.com/aluzme/go-admin/plugins"
+	form2 "github.com/aluzme/go-admin/plugins/admin/modules/form"
+	"github.com/aluzme/go-admin/plugins/admin/modules/table"
+	"github.com/aluzme/go-admin/template/types"
 )
 
 type {{.PluginTitle}} struct {
@@ -119,9 +119,9 @@ func (plug *{{.PluginTitle}}) GetSettingPage() table.Generator {
 	"controller": `package controller
 
 import (
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/plugins"
+	"github.com/aluzme/go-admin/template/types"
 )
 
 type Handler struct {
@@ -141,8 +141,8 @@ func (h *Handler) Update(/*...*/) {
 	"controller_example": `package controller
 
 import (
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/template/types"
 	"html/template"
 	"{{.ModulePath}}/guard"
 )
@@ -159,7 +159,7 @@ func (h *Handler) Example(ctx *context.Context) {
 	"guard": `package guard
 
 import (
-	"github.com/GoAdminGroup/go-admin/modules/db"
+	"github.com/aluzme/go-admin/modules/db"
 )
 
 type Guardian struct {
@@ -178,7 +178,7 @@ func (g *Guardian) Update(/*...*/) {
 	"guard_example": `package guard
 
 import (
-	"github.com/GoAdminGroup/go-admin/context"
+	"github.com/aluzme/go-admin/context"
 )
 
 type ExampleParam struct {
@@ -210,10 +210,10 @@ test:
 	"router": `package {{.PluginName}}
 
 import (
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/service"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/modules/auth"
+	"github.com/aluzme/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/service"
 )
 
 func (plug *{{.PluginTitle}}) initRouter(srv service.List) *context.App {
@@ -229,7 +229,7 @@ func (plug *{{.PluginTitle}}) initRouter(srv service.List) *context.App {
 	"language": `package language
 
 import (
-	"github.com/GoAdminGroup/go-admin/modules/language"
+	"github.com/aluzme/go-admin/modules/language"
 	"html/template"
 )
 
@@ -242,14 +242,14 @@ func GetHTML(key string) template.HTML {
 }`,
 	"language_cn": `package language
 
-import "github.com/GoAdminGroup/go-admin/modules/language"
+import "github.com/aluzme/go-admin/modules/language"
 
 var CN = language.LangSet{
 	"{{.PluginName}}.aaa": "aaa",
 }`,
 	"language_en": `package language
 
-import "github.com/GoAdminGroup/go-admin/modules/language"
+import "github.com/aluzme/go-admin/modules/language"
 
 var EN = language.LangSet{
 	"{{.PluginName}}.aaa": "aaa",

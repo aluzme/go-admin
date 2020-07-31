@@ -4,10 +4,10 @@ const tableModelTmpl = `{{define "table_model"}}
 package {{.Package}}
 
 import (
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
+	"github.com/aluzme/go-admin/context"
+	"github.com/aluzme/go-admin/modules/db"
+	"github.com/aluzme/go-admin/plugins/admin/modules/table"
+	"github.com/aluzme/go-admin/template/types/form"
 )
 
 func Get{{.TableTitle}}Table(ctx *context.Context) table.Table {

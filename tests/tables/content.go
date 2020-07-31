@@ -3,17 +3,17 @@ package tables
 import (
 	"html/template"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	tmpl "github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	"github.com/GoAdminGroup/go-admin/template/icon"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/themes/adminlte/components/chart_legend"
-	"github.com/GoAdminGroup/themes/adminlte/components/description"
-	"github.com/GoAdminGroup/themes/adminlte/components/infobox"
-	"github.com/GoAdminGroup/themes/adminlte/components/productlist"
-	"github.com/GoAdminGroup/themes/adminlte/components/progress_group"
-	"github.com/GoAdminGroup/themes/adminlte/components/smallbox"
+	"github.com/aluzme/go-admin/context"
+	tmpl "github.com/aluzme/go-admin/template"
+	"github.com/aluzme/go-admin/template/chartjs"
+	"github.com/aluzme/go-admin/template/icon"
+	"github.com/aluzme/go-admin/template/types"
+	"github.com/aluzme/themes/adminlte/components/chart_legend"
+	"github.com/aluzme/themes/adminlte/components/description"
+	"github.com/aluzme/themes/adminlte/components/infobox"
+	"github.com/aluzme/themes/adminlte/components/productlist"
+	"github.com/aluzme/themes/adminlte/components/progress_group"
+	"github.com/aluzme/themes/adminlte/components/smallbox"
 )
 
 // GetContent return the content of index page.

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/config"
 )
 
 // Postgresql is a Connection of postgresql.

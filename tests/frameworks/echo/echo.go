@@ -2,32 +2,32 @@ package echo
 
 import (
 	// add echo adapter
-	_ "github.com/GoAdminGroup/go-admin/adapter/echo"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/themes/adminlte"
+	_ "github.com/aluzme/go-admin/adapter/echo"
+	"github.com/aluzme/go-admin/modules/config"
+	"github.com/aluzme/go-admin/modules/language"
+	"github.com/aluzme/go-admin/plugins/admin/modules/table"
+	"github.com/aluzme/themes/adminlte"
 
 	// add mysql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mysql"
+	_ "github.com/aluzme/go-admin/modules/db/drivers/mysql"
 	// add postgresql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/postgres"
+	_ "github.com/aluzme/go-admin/modules/db/drivers/postgres"
 	// add sqlite driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite"
+	_ "github.com/aluzme/go-admin/modules/db/drivers/sqlite"
 	// add mssql driver
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mssql"
+	_ "github.com/aluzme/go-admin/modules/db/drivers/mssql"
 	// add adminlte ui theme
-	_ "github.com/GoAdminGroup/themes/adminlte"
+	_ "github.com/aluzme/themes/adminlte"
 
 	"net/http"
 	"os"
 
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/go-admin/plugins/example"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	"github.com/GoAdminGroup/go-admin/tests/tables"
+	"github.com/aluzme/go-admin/engine"
+	"github.com/aluzme/go-admin/plugins/admin"
+	"github.com/aluzme/go-admin/plugins/example"
+	"github.com/aluzme/go-admin/template"
+	"github.com/aluzme/go-admin/template/chartjs"
+	"github.com/aluzme/go-admin/tests/tables"
 	"github.com/labstack/echo/v4"
 )
 

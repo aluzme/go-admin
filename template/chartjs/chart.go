@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"html/template"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
-	template2 "github.com/GoAdminGroup/go-admin/template"
+	"github.com/aluzme/go-admin/modules/logger"
+	template2 "github.com/aluzme/go-admin/template"
 )
 
 type Chart struct {
